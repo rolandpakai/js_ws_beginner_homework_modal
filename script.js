@@ -15,7 +15,7 @@ modalBtn.addEventListener("click", openModal);
 closeBtn[0].addEventListener("click", closeModal);
 
 function outsideClick(e) {
-    if (e.target == modalBox[0]) {
+    if (e.target.classList.contains("modal")) {
       closeModal();
     }
 }
