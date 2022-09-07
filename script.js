@@ -1,18 +1,18 @@
 
 const modalBtn = document.getElementById("modal-btn");
-const modalBox = document.getElementsByClassName("modal");
-const closeBtn = document.getElementsByClassName("close");
+const modalBox = document.getElementsByClassName("modal")[0];
+const closeBtn = document.getElementsByClassName("close")[0];
 
-function openModal (){
-    modalBox[0].style.display = 'block';
+function openModal () {
+    modalBox.style.display = 'block';
 }
 
-function closeModal (){
-    modalBox[0].style.display = 'none';
+function closeModal () {
+    modalBox.style.display = 'none';
 }
 
 modalBtn.addEventListener("click", openModal);
-closeBtn[0].addEventListener("click", closeModal);
+closeBtn.addEventListener("click", closeModal);
 
 function outsideClick(e) {
     if (e.target.classList.contains("modal")) {
