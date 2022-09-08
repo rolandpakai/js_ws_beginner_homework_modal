@@ -7,9 +7,10 @@ function revealContent() {
 function hideContent() {
     module.style.display = 'none';
 }
-module.addEventListener("click", hideContent);
 xbutton.addEventListener("click", hideContent);
 button2.addEventListener("click", revealContent);
-
-
-
+document.addEventListener("click", function (e) {
+    if(e.target == module){
+        hideContent();
+    }
+}, true);
