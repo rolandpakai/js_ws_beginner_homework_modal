@@ -1,4 +1,4 @@
-﻿### Modal With HTML, CSS & JavaScript
+﻿# Modal With HTML, CSS & JavaScript
 
 ## Steps
  
